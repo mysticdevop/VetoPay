@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>VetoPay — Risk Operations Console</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">
+  <div class="max-w-6xl mx-auto p-6 space-y-6">
+    
+    <!-- Header -->
+    <header class="flex justify-between items-center border-b border-slate-800 pb-4">
+      <div>
+        <h1 class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+          <span class="text-blue-500">🛡️</span> VetoPay Risk Console
+        </h1>
+        <p class="text-xs text-slate-400 mt-1">Autonomous Friendly-Fraud Defense & Chargeback Representment</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="text-xs font-mono text-emerald-400">POLICY ENGINE LIVE</span>
+      </div>
+    </header>
+
+    <!-- Controls / Trigger Simulation -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Scenario Selector -->
+      <div class="bg-slate-900 border border-slate-800 rounded-lg p-5 space-y-4">
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400">Simulate Dispute Event</h2>
+        
+        <div>
+          <label class="block text-xs text-slate-400 mb-1">Preset Scenarios</label>
+          <select id="scenario-preset" onchange="loadPreset()" class="w-full bg-slate-950 border border-slate-700 rounded px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-blue-500">
+            <option value="friendly_fraud">Friendly Fraud (OTP Delivered + 3DS)</option>
+            <option value="rto_defect">Merchant Defect (Return to Origin)</option>
+            <option value="micro_ticket">Micro-Ticket (Under Penalty Fee)</option>
+            <option value="high_risk">Stolen Card (No 3DS, No OTP)</option>
+          </select>
+        </div>
+
+        <div class="space-y-3 pt-2">
+          <div>
+            <label class="block text-xs text-slate-400">Dispute Amount (INR)</label>
+            <input type="number" id="inp-amount" value="4800" class="w-full bg-slate-950 border border-slate-700 rounded px-3 py-1.5 text-sm text-slate-200 mt-1">
+          </div>
+          <div>
+            <label class="block text-xs text-slate-400">Courier Status</label>
+            <select id="inp-status" class="w-full bg-slate-950 border border-slate-700 rounded px-3 py-1.5 text-sm text-slate-200 mt-1">
+              <option value="DELIVERED">DELIVERED</option>
+              <option value="RETURNED_TO_ORIGIN">RETURNED_TO_ORIGIN</option>
+              <option value="IN_TRANSIT">IN_TRANSIT</option>
+            </select>
+          </div>
+          <div class="flex items-center gap-4 pt-2">
+            <label class="flex items-center gap-2 text-xs text-slate-300">
+              <input type="checkbox" id="inp-3ds" checked class="rounded bg-slate-950 border-slate-700 text-blue-600"> 3DS Authenticated
+            </label>
+            <label class="flex items-center gap-2 text-xs text-slate-300">
+              <input type="checkbox" id="inp-otp" checked class="rounded bg-slate-950 border-slate-700 text-blue-600"> OTP Verified
+            </label>
+          </div>
+        </div>
+
+        <button onclick="evaluateDispute()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 rounded text-sm transition">
+          Run Defense Triage
+        </button>
+      </div>
+
+      <!-- Live Verdict Output -->
+      <div class="bg-slate-900 border border-slate-800 rounded-lg p-5 flex flex-col justify-between">
+        <div>
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">Triage Verdict</h2>
+          <div id="verdict-container" class="p-4 rounded border border-slate-800 bg-slate-950 text-center space-y-2">
+            <span class="text-slate-500 text-sm italic">Click "Run Defense Triage" to execute...</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-4 border-t border-slate-800 grid grid-cols-2 gap-3 text-center">
+          <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+            <p class="text-[11px] text-slate-400">Est. Net Recovery</p>
+            <p id="metric-recovery" class="text-sm font-semibold text-slate-200 mt-0.5">--</p>
+          </div>
+          <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+            <p class="text-[11px] text-slate-400">Confidence</p>
+            <p id="metric-confidence" class="text-sm font-semibold text-slate-200 mt-0.5">--</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Representment Dossier Artifact -->
+      <div class="bg-slate-900 border border-slate-800 rounded-lg p-5 flex flex-col">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400">Bank Dossier Payload</h2>
+          <span id="dossier-status" class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">AWAITING DECISION</span>
+        </div>
+        <textarea id="dossier-json" readonly class="w-full flex-1 bg-slate-950 border border-slate-800 rounded p-2 text-[11px] font-mono text-emerald-400 resize-none focus:outline-none" placeholder="// Formatted NPCI/Bank representment payload will appear here if CONTEST verdict is reached..."></textarea>
+      </div>
+    </section>
+
+    <!-- Real-time Audit Ledger Sink -->
+    <section class="bg-slate-900 border border-slate-800 rounded-lg p-5 space-y-3">
+      <div class="flex justify-between items-center">
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400">Immutable Audit Trail (Local JSONL Mirror)</h2>
+        <span class="text-xs text-slate-500 font-mono">Total Decisions: <span id="audit-count">0</span></span>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs font-mono">
+          <thead class="bg-slate-950 text-slate-400 border-b border-slate-800">
+            <tr>
+              <th class="py-2.5 px-3">Dispute ID</th>
+              <th class="py-2.5 px-3">Action</th>
+              <th class="py-2.5 px-3">Amount</th>
+              <th class="py-2.5 px-3">Expected Net</th>
+              <th class="py-2.5 px-3">Policy Rationale</th>
+            </tr>
+          </thead>
+          <tbody id="audit-rows" class="divide-y divide-slate-800 text-slate-300">
+            <tr>
+              <td colspan="5" class="py-4 text-center text-slate-600 italic">Ledger empty. Trigger an evaluation above.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    let ledgerHistory = [];
+
+    const presets = {
+      friendly_fraud: { amount: 4800, status: "DELIVERED", has_3ds: true, otp: true },
+      rto_defect: { amount: 2200, status: "RETURNED_TO_ORIGIN", has_3ds: true, otp: false },
+      micro_ticket: { amount: 250, status: "DELIVERED", has_3ds: true, otp: true },
+      high_risk: { amount: 6500, status: "DELIVERED", has_3ds: false, otp: false }
+    };
+
+    function loadPreset() {
+      const selected = document.getElementById("scenario-preset").value;
+      const data = presets[selected];
+      document.getElementById("inp-amount").value = data.amount;
+      document.getElementById("inp-status").value = data.status;
+      document.getElementById("inp-3ds").checked = data.has_3ds;
+      document.getElementById("inp-otp").checked = data.otp;
+    }
+
+    async function evaluateDispute() {
+      const dispId = "disp_" + Math.floor(1000 + Math.random() * 9000);
+      const amount = parseFloat(document.getElementById("inp-amount").value);
+      const status = document.getElementById("inp-status").value;
+      const has3ds = document.getElementById("inp-3ds").checked;
+      const otp = document.getElementById("inp-otp").checked;
+
+      const payload = {
+        dispute: {
+          dispute_id: dispId,
+          payment_id: "pay_" + Math.floor(10000 + Math.random() * 90000),
+          amount_inr: amount,
+          reason: "product_not_received",
+          dispute_created_at: Math.floor(Date.now() / 1000),
+          has_3ds_auth: has3ds
+        },
+        delivery: {
+          carrier: "BlueDart",
+          tracking_number: "BD" + Math.floor(100000 + Math.random() * 900000),
+          status: status,
+          otp_verified: otp,
+          recipient_signed: otp,
+          delivery_timestamp: Math.floor(Date.now() / 1000) - 3600
+        }
+      };
+
+      try {
+        const triageRes = await fetch("/triage", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const decision = await triageRes.json();
+
+        // Render Verdict
+        const vContainer = document.getElementById("verdict-container");
+        const actionColors = {
+          CONTEST: "text-emerald-400 bg-emerald-950/60 border-emerald-800",
+          CONCEDE: "text-amber-400 bg-amber-950/60 border-amber-800",
+          HUMAN_ESCALATION: "text-blue-400 bg-blue-950/60 border-blue-800"
+        };
+        vContainer.className = `p-4 rounded border text-center space-y-1.5 ${actionColors[decision.action]}`;
+        vContainer.innerHTML = `
+          <p class="text-xs uppercase font-mono tracking-wide font-bold">${decision.action}</p>
+          <p class="text-xs font-sans text-slate-300">${decision.justification}</p>
+        `;
+
+        document.getElementById("metric-recovery").innerText = `₹${decision.expected_net_recovery_inr.toFixed(2)}`;
+        document.getElementById("metric-confidence").innerText = `${(decision.confidence_score * 100).toFixed(0)}%`;
+
+        // Dossier generation
+        const dossierArea = document.getElementById("dossier-json");
+        const dossierStatus = document.getElementById("dossier-status");
+        if (decision.action === "CONTEST") {
+          const dossierRes = await fetch("/dossier", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          });
+          const dossier = await dossierRes.json();
+          dossierArea.value = JSON.stringify(dossier, null, 2);
+          dossierStatus.innerText = "GENERATED (NPCI_V2)";
+          dossierStatus.className = "text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800";
+        } else {
+          dossierArea.value = "// Representment skipped: dispute conceded to avoid futile fee overhead.";
+          dossierStatus.innerText = "SUPPRESSED";
+          dossierStatus.className = "text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-500";
+        }
+
+        // Prepend to UI ledger
+        ledgerHistory.unshift({
+          id: decision.dispute_id,
+          action: decision.action,
+          amount: amount,
+          expected: decision.expected_net_recovery_inr,
+          rationale: decision.justification
+        });
+        updateLedgerUI();
+
+      } catch (err) {
+        console.error("Evaluation failed", err);
+      }
+    }
+
+    function updateLedgerUI() {
+      document.getElementById("audit-count").innerText = ledgerHistory.length;
+      const tbody = document.getElementById("audit-rows");
+      tbody.innerHTML = ledgerHistory.map(entry => `
+        <tr class="hover:bg-slate-950/60">
+          <td class="py-2.5 px-3 text-slate-400 font-semibold">${entry.id}</td>
+          <td class="py-2.5 px-3">
+            <span class="px-2 py-0.5 text-[10px] rounded ${
+              entry.action === 'CONTEST' ? 'bg-emerald-950 text-emerald-400 border border-emerald-800' :
+              entry.action === 'CONCEDE' ? 'bg-amber-950 text-amber-400 border border-amber-800' :
+              'bg-blue-950 text-blue-400 border border-blue-800'
+            }">${entry.action}</span>
+          </td>
+          <td class="py-2.5 px-3 text-slate-300">₹${entry.amount.toFixed(2)}</td>
+          <td class="py-2.5 px-3 font-semibold ${entry.expected > 0 ? 'text-emerald-400' : 'text-slate-400'}">₹${entry.expected.toFixed(2)}</td>
+          <td class="py-2.5 px-3 text-slate-400 truncate max-w-xs">${entry.rationale}</td>
+        </tr>
+      `).join("");
+    }
+  </script>
+</body>
+</html>
