@@ -1,0 +1,2002 @@
+[
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1000",
+      "payment_id": "pay_2000",
+      "amount_inr": 980.08,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK388389",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1001",
+      "payment_id": "pay_2001",
+      "amount_inr": 2965.15,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK207473",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1002",
+      "payment_id": "pay_2002",
+      "amount_inr": 7223.69,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK191161",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1003",
+      "payment_id": "pay_2003",
+      "amount_inr": 1028.84,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK198246",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1004",
+      "payment_id": "pay_2004",
+      "amount_inr": 6806.23,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK127824",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1005",
+      "payment_id": "pay_2005",
+      "amount_inr": 5955.34,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK835392",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1006",
+      "payment_id": "pay_2006",
+      "amount_inr": 2387.17,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK717889",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1007",
+      "payment_id": "pay_2007",
+      "amount_inr": 10627.65,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK895667",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1008",
+      "payment_id": "pay_2008",
+      "amount_inr": 3792.56,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK456778",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1009",
+      "payment_id": "pay_2009",
+      "amount_inr": 3760.79,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK900581",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1010",
+      "payment_id": "pay_2010",
+      "amount_inr": 2473.83,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK201414",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1011",
+      "payment_id": "pay_2011",
+      "amount_inr": 5111.54,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK377370",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1012",
+      "payment_id": "pay_2012",
+      "amount_inr": 3918.93,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK662275",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1013",
+      "payment_id": "pay_2013",
+      "amount_inr": 11184.1,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK182627",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1014",
+      "payment_id": "pay_2014",
+      "amount_inr": 6771.71,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK748564",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1015",
+      "payment_id": "pay_2015",
+      "amount_inr": 2446.54,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK301629",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1016",
+      "payment_id": "pay_2016",
+      "amount_inr": 1183.3,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK338968",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1017",
+      "payment_id": "pay_2017",
+      "amount_inr": 4940.89,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK996865",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1018",
+      "payment_id": "pay_2018",
+      "amount_inr": 2560.52,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK391476",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1019",
+      "payment_id": "pay_2019",
+      "amount_inr": 6805.6,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK270555",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1020",
+      "payment_id": "pay_2020",
+      "amount_inr": 3699.82,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK379946",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1021",
+      "payment_id": "pay_2021",
+      "amount_inr": 3734.19,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK174870",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1022",
+      "payment_id": "pay_2022",
+      "amount_inr": 2032.2,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK864544",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1023",
+      "payment_id": "pay_2023",
+      "amount_inr": 6353.73,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK383060",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1024",
+      "payment_id": "pay_2024",
+      "amount_inr": 242.0,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK684004",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1025",
+      "payment_id": "pay_2025",
+      "amount_inr": 4904.97,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK905635",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1026",
+      "payment_id": "pay_2026",
+      "amount_inr": 1916.19,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK133659",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1027",
+      "payment_id": "pay_2027",
+      "amount_inr": 2604.66,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK169403",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1028",
+      "payment_id": "pay_2028",
+      "amount_inr": 11400.55,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK852787",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1029",
+      "payment_id": "pay_2029",
+      "amount_inr": 8382.11,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK514850",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1030",
+      "payment_id": "pay_2030",
+      "amount_inr": 3571.41,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK249811",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1031",
+      "payment_id": "pay_2031",
+      "amount_inr": 4089.59,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK688637",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1032",
+      "payment_id": "pay_2032",
+      "amount_inr": 6178.5,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK549245",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1033",
+      "payment_id": "pay_2033",
+      "amount_inr": 2597.6,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK329974",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1034",
+      "payment_id": "pay_2034",
+      "amount_inr": 91.5,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK617488",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1035",
+      "payment_id": "pay_2035",
+      "amount_inr": 1994.72,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK214975",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1036",
+      "payment_id": "pay_2036",
+      "amount_inr": 3179.81,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK813536",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1037",
+      "payment_id": "pay_2037",
+      "amount_inr": 1257.4,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK500156",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1038",
+      "payment_id": "pay_2038",
+      "amount_inr": 4169.96,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK363626",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1039",
+      "payment_id": "pay_2039",
+      "amount_inr": 308.23,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK112038",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1040",
+      "payment_id": "pay_2040",
+      "amount_inr": 1624.77,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK663054",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1041",
+      "payment_id": "pay_2041",
+      "amount_inr": 4074.39,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK456699",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1042",
+      "payment_id": "pay_2042",
+      "amount_inr": 6065.04,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK575763",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1043",
+      "payment_id": "pay_2043",
+      "amount_inr": 9081.97,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK854639",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1044",
+      "payment_id": "pay_2044",
+      "amount_inr": 6756.15,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK287330",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1045",
+      "payment_id": "pay_2045",
+      "amount_inr": 1566.16,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK755674",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1046",
+      "payment_id": "pay_2046",
+      "amount_inr": 8208.97,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK738551",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1047",
+      "payment_id": "pay_2047",
+      "amount_inr": 5426.1,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK269396",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1048",
+      "payment_id": "pay_2048",
+      "amount_inr": 6406.11,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK656116",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1049",
+      "payment_id": "pay_2049",
+      "amount_inr": 229.68,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK612340",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1050",
+      "payment_id": "pay_2050",
+      "amount_inr": 11255.54,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK972064",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1051",
+      "payment_id": "pay_2051",
+      "amount_inr": 1957.81,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK352572",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1052",
+      "payment_id": "pay_2052",
+      "amount_inr": 4787.8,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK189814",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1053",
+      "payment_id": "pay_2053",
+      "amount_inr": 4264.09,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK897549",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1054",
+      "payment_id": "pay_2054",
+      "amount_inr": 1705.48,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK791798",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1055",
+      "payment_id": "pay_2055",
+      "amount_inr": 4758.59,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK377932",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1056",
+      "payment_id": "pay_2056",
+      "amount_inr": 5167.48,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK322086",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1057",
+      "payment_id": "pay_2057",
+      "amount_inr": 276.58,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK823378",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1058",
+      "payment_id": "pay_2058",
+      "amount_inr": 4773.02,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK804314",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1059",
+      "payment_id": "pay_2059",
+      "amount_inr": 3954.32,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK642717",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1060",
+      "payment_id": "pay_2060",
+      "amount_inr": 2584.92,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK167136",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1061",
+      "payment_id": "pay_2061",
+      "amount_inr": 7677.24,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK341292",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1062",
+      "payment_id": "pay_2062",
+      "amount_inr": 851.77,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK842225",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1063",
+      "payment_id": "pay_2063",
+      "amount_inr": 2448.38,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK132938",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1064",
+      "payment_id": "pay_2064",
+      "amount_inr": 1283.43,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK349565",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1065",
+      "payment_id": "pay_2065",
+      "amount_inr": 6596.85,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK665427",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1066",
+      "payment_id": "pay_2066",
+      "amount_inr": 11322.9,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK698782",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1067",
+      "payment_id": "pay_2067",
+      "amount_inr": 2549.58,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK595948",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1068",
+      "payment_id": "pay_2068",
+      "amount_inr": 1761.64,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK201639",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1069",
+      "payment_id": "pay_2069",
+      "amount_inr": 3350.94,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK531071",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1070",
+      "payment_id": "pay_2070",
+      "amount_inr": 6049.35,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK806073",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1071",
+      "payment_id": "pay_2071",
+      "amount_inr": 5452.49,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK163556",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1072",
+      "payment_id": "pay_2072",
+      "amount_inr": 3242.98,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK214576",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1073",
+      "payment_id": "pay_2073",
+      "amount_inr": 3497.19,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK570405",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1074",
+      "payment_id": "pay_2074",
+      "amount_inr": 3426.62,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK585100",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1075",
+      "payment_id": "pay_2075",
+      "amount_inr": 11194.29,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK564656",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1076",
+      "payment_id": "pay_2076",
+      "amount_inr": 4423.87,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK202664",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1077",
+      "payment_id": "pay_2077",
+      "amount_inr": 11992.47,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK976638",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1078",
+      "payment_id": "pay_2078",
+      "amount_inr": 2479.26,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK890170",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1079",
+      "payment_id": "pay_2079",
+      "amount_inr": 1665.24,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK609231",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1080",
+      "payment_id": "pay_2080",
+      "amount_inr": 7025.48,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK161483",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1081",
+      "payment_id": "pay_2081",
+      "amount_inr": 1522.63,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK509386",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1082",
+      "payment_id": "pay_2082",
+      "amount_inr": 9732.74,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK577110",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1083",
+      "payment_id": "pay_2083",
+      "amount_inr": 8814.21,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK865990",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1084",
+      "payment_id": "pay_2084",
+      "amount_inr": 216.73,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK853305",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1085",
+      "payment_id": "pay_2085",
+      "amount_inr": 2167.26,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK328275",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1086",
+      "payment_id": "pay_2086",
+      "amount_inr": 223.75,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK668532",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1087",
+      "payment_id": "pay_2087",
+      "amount_inr": 4792.85,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK152578",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1088",
+      "payment_id": "pay_2088",
+      "amount_inr": 4420.52,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK994141",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1089",
+      "payment_id": "pay_2089",
+      "amount_inr": 1209.53,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK632496",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1090",
+      "payment_id": "pay_2090",
+      "amount_inr": 3451.16,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK723939",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1091",
+      "payment_id": "pay_2091",
+      "amount_inr": 10549.1,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK523389",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1092",
+      "payment_id": "pay_2092",
+      "amount_inr": 10848.02,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK358175",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1093",
+      "payment_id": "pay_2093",
+      "amount_inr": 1086.14,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK185965",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1094",
+      "payment_id": "pay_2094",
+      "amount_inr": 5002.44,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK648177",
+      "status": "RETURNED_TO_ORIGIN",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": null,
+      "delivery_lat_long": null
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1095",
+      "payment_id": "pay_2095",
+      "amount_inr": 4238.04,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK802258",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1096",
+      "payment_id": "pay_2096",
+      "amount_inr": 1954.74,
+      "reason": "fraudulent",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": false
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK515011",
+      "status": "DELIVERED",
+      "otp_verified": false,
+      "recipient_signed": false,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONCEDE"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1097",
+      "payment_id": "pay_2097",
+      "amount_inr": 8277.76,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK579434",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1098",
+      "payment_id": "pay_2098",
+      "amount_inr": 9394.58,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK176066",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  },
+  {
+    "dispute": {
+      "dispute_id": "disp_test_1099",
+      "payment_id": "pay_2099",
+      "amount_inr": 8022.17,
+      "reason": "product_not_received",
+      "dispute_created_at": 1772740000,
+      "has_3ds_auth": true
+    },
+    "delivery": {
+      "carrier": "BlueDart",
+      "tracking_number": "TRK690341",
+      "status": "DELIVERED",
+      "otp_verified": true,
+      "recipient_signed": true,
+      "delivery_timestamp": 1772653600,
+      "delivery_lat_long": "28.4595,77.0266"
+    },
+    "ground_truth_action": "CONTEST"
+  }
+]
